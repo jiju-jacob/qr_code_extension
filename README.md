@@ -1,16 +1,22 @@
-# qr_code_extension
+# Flutter QR code generator - Chrome extension
 
-A new Flutter project.
+Chrome extension created using Flutter for generating QR code from either a text or URL. The QR code's background and foreground colors are also customizable.
 
-## Getting Started
+## Usage
+To use this project as a Chrome extension, follow the steps below:
 
-This project is a starting point for a Flutter application.
+1. Clone the repo
 
-A few resources to get you started if this is your first Flutter project:
+2. From the project directory, run:
+```sh
+flutter build web --web-renderer html --csp
+```
+3. Go to the following URL from Chrome browser:
+```sh
+chrome://extensions
+```
+4. Enable the Developer mode.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5. Click Load unpacked. Select the `<project_dir>/build/web` folder.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This will install the extension to your Chrome browser and then you will be able to access the extension by clicking on the extension icon.
